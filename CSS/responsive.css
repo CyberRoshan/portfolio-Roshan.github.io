@@ -1,7 +1,7 @@
 @media only screen and (min-width: 200px) and (max-width: 575px) {
   .heading {
     font-size: 40px;
-    background: url(/images/bgdesign.svg) no-repeat 73% 18px;
+    background: url('../images/bgdesign.svg') no-repeat 73% 18px;
     background-size: 100px;
   }
   /* ! Header Section Start */
@@ -10,11 +10,41 @@
     padding: 20px;
   }
   .nav-center {
-    display: none;
+    width: 80%;
+    height: 100vh;
+    position: fixed;
+    top: 0px;
+    right: -100%;
+    z-index: 99999999;
+    background-color: #1F0016;
+    padding: 100px 50px;
+    transition: 0.5s;
+  }
+  .fa-xmark{
+    display: block;
+    font-size: 32px;
+    position: absolute;
+    top: 30px;
+    right: 20px;
+  }
+  .activeCenterNav{
+    right: 0px;
+  }
+  .nav-center>ul{
+   flex-direction: column;
+   align-items: start;
+   gap: 40px;
+  }
+  .nav-center > ul > li > a {
+    font-size: 22px;
   }
   .nav-right > a > .btn {
     padding: 10px 15px;
     font-size: 16px;
+    display: none;
+  }
+  .fa-bars{
+    display: block;
   }
   /* ! Header Section End */
   /* ! Hero Section Start */
@@ -355,22 +385,4 @@
     font-size: 30px;
   }
   /* ! Position Arrow Section End */
-}
-@media only screen and (min-width: 270px) and (max-width: 375px) {
-  .btn {
-    margin: auto;
-    margin-bottom: 20px;
-  }
-  .first-footer--items > input {
-    margin: auto;
-    display: block;
-  }
-  .first-footer--items > .btn {
-    margin: auto;
-    margin-top: 10px;
-    display: block;
-  }
-  .second-footer > div {
-    font-size: 12px;
-  }
 }
