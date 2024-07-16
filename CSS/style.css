@@ -16,6 +16,7 @@ html {
 }
 body {
   background-color: var(--bg-black);
+  overflow-x: hidden;
 }
 .heading {
   font-size: 60px;
